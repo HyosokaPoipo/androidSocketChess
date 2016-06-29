@@ -9,15 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="poipo.hyosoka.com.socketchess.MainActivity">
 <TableRow>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="fill_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
         <ImageView
-            android:id="@+id/flag"
-            android:layout_width="fill_parent"
-            android:layout_height="250dp"
+            android:id="@+id/papan8a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:scaleType="fitXY"
@@ -25,7 +24,31 @@
              />
 
         <TextView
-            android:id="@+id/textview"
+            android:id="@+id/bidak8a"
+            android:background="@drawable/black_rook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Contoh"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/papan8b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:background="@color/putih"
+            />
+
+        <TextView
+            android:id="@+id/bidak8b"
             android:background="@drawable/black_rook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
