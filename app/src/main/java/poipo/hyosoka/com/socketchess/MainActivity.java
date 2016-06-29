@@ -1,29 +1,48 @@
 package poipo.hyosoka.com.socketchess;
 
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
+    Map<String, Integer> mapID = new HashMap<String,Integer>();
     getServerData threadProcess;
     TextView myTest ;
+
+    TextView bidakTV;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.papan_gridlayout);
+        setID();
         myTest = (TextView) findViewById(R.id.testajjah);
         threadProcess = new getServerData("xinuc.org",7387);
-        threadProcess.execute();
+        //threadProcess.execute();
+
+
+        //bidakTV = (TextView)findViewById(R.id.bidak1c);
+        String data = "Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3 Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3";
+        setBidak(data);
+        myTest.setText(data);
+        resetBidak();
+    
+
+
 
     }
 
@@ -129,4 +148,142 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    private void setBidak(String key)
+    {
+        String[] data = key.split(" ");
+        for(int i=0; i<data.length; i++)
+        {
+            bidakTV = null;
+            bidakTV = (TextView)findViewById(Integer.parseInt(mapID.get(data[i].substring(1)).toString()));
+            switch (data[i].charAt(0))
+            {
+                case 'K': //white king
+                        bidakTV.setBackgroundResource(R.drawable.white_king);
+                    break;
+                case 'Q': //white queen
+                    bidakTV.setBackgroundResource(R.drawable.white_queen);
+                    break;
+                case 'B': //white bishop
+                    bidakTV.setBackgroundResource(R.drawable.white_bishop);
+                    break;
+                case 'N' : //white knight
+                    bidakTV.setBackgroundResource(R.drawable.white_knight);
+                    break;
+                case 'R': //white rook
+                    bidakTV.setBackgroundResource(R.drawable.white_rook);
+                    break;
+                case 'k' : //black king
+                    bidakTV.setBackgroundResource(R.drawable.black_king);
+                    break;
+                case 'q' : //black queen
+                    bidakTV.setBackgroundResource(R.drawable.black_queen);
+                    break;
+                case 'b' : //black bishop
+                    bidakTV.setBackgroundResource(R.drawable.black_bishop);
+                    break;
+                case 'n' : //black knight
+                    bidakTV.setBackgroundResource(R.drawable.black_knight);
+                    break;
+                case 'r' : //black rook
+                    bidakTV.setBackgroundResource(R.drawable.black_rook);
+                    break;
+                default :
+                    Toast.makeText(getApplicationContext(),"Undefined Bidak : "+data[i],Toast.LENGTH_SHORT).show();
+                    break;
+
+            }
+        }
+
+    }
+
+
+
+    private void setID()
+    {
+        mapID.put("a1",R.id.bidak1a);
+        mapID.put("a2",R.id.bidak2a);
+        mapID.put("a3",R.id.bidak3a);
+        mapID.put("a4",R.id.bidak4a);
+        mapID.put("a5",R.id.bidak5a);
+        mapID.put("a6",R.id.bidak6a);
+        mapID.put("a7",R.id.bidak7a);
+        mapID.put("a8",R.id.bidak8a);
+
+        mapID.put("b1",R.id.bidak1b);
+        mapID.put("b2",R.id.bidak2b);
+        mapID.put("b3",R.id.bidak3b);
+        mapID.put("b4",R.id.bidak4b);
+        mapID.put("b5",R.id.bidak5b);
+        mapID.put("b6",R.id.bidak6b);
+        mapID.put("b7",R.id.bidak7b);
+        mapID.put("b8",R.id.bidak8b);
+
+        mapID.put("c1",R.id.bidak1c);
+        mapID.put("c2",R.id.bidak2c);
+        mapID.put("c3",R.id.bidak3c);
+        mapID.put("c4",R.id.bidak4c);
+        mapID.put("c5",R.id.bidak5c);
+        mapID.put("c6",R.id.bidak6c);
+        mapID.put("c7",R.id.bidak7c);
+        mapID.put("c8",R.id.bidak8c);
+
+        mapID.put("d1",R.id.bidak1d);
+        mapID.put("d2",R.id.bidak2d);
+        mapID.put("d3",R.id.bidak3d);
+        mapID.put("d4",R.id.bidak4d);
+        mapID.put("d5",R.id.bidak5d);
+        mapID.put("d6",R.id.bidak6d);
+        mapID.put("d7",R.id.bidak7d);
+        mapID.put("d8",R.id.bidak8d);
+
+
+        mapID.put("e1",R.id.bidak1e);
+        mapID.put("e2",R.id.bidak2e);
+        mapID.put("e3",R.id.bidak3e);
+        mapID.put("e4",R.id.bidak4e);
+        mapID.put("e5",R.id.bidak5e);
+        mapID.put("e6",R.id.bidak6e);
+        mapID.put("e7",R.id.bidak7e);
+        mapID.put("e8",R.id.bidak8e);
+
+
+        mapID.put("f1",R.id.bidak1f);
+        mapID.put("f2",R.id.bidak2f);
+        mapID.put("f3",R.id.bidak3f);
+        mapID.put("f4",R.id.bidak4f);
+        mapID.put("f5",R.id.bidak5f);
+        mapID.put("f6",R.id.bidak6f);
+        mapID.put("f7",R.id.bidak7f);
+        mapID.put("f8",R.id.bidak8f);
+
+        mapID.put("g1",R.id.bidak1g);
+        mapID.put("g2",R.id.bidak2g);
+        mapID.put("g3",R.id.bidak3g);
+        mapID.put("g4",R.id.bidak4g);
+        mapID.put("g5",R.id.bidak5g);
+        mapID.put("g6",R.id.bidak6g);
+        mapID.put("g7",R.id.bidak7g);
+        mapID.put("g8",R.id.bidak8g);
+
+
+        mapID.put("h1",R.id.bidak1h);
+        mapID.put("h2",R.id.bidak2h);
+        mapID.put("h3",R.id.bidak3h);
+        mapID.put("h4",R.id.bidak4h);
+        mapID.put("h5",R.id.bidak5h);
+        mapID.put("h6",R.id.bidak6h);
+        mapID.put("h7",R.id.bidak7h);
+        mapID.put("h8",R.id.bidak8h);
+    }
+
+
+    private void resetBidak()
+    {
+        for(Map.Entry<String, Integer> entry: mapID.entrySet())
+        {
+            bidakTV = (TextView)findViewById(entry.getValue());
+            bidakTV.setBackgroundColor(Color.TRANSPARENT);
+        }
+
+    }
 }
