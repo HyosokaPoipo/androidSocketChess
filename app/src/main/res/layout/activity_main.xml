@@ -21,10 +21,12 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:scaleType="fitXY"
+            android:background="@color/kuningDikit"
              />
 
         <TextView
             android:id="@+id/textview"
+            android:background="@drawable/black_rook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
