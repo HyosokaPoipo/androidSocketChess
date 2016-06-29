@@ -3,21 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-
+    android:gravity="center_vertical"
     android:layout_height="match_parent">
 
     <android.support.v7.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
         app:columnCount="8"
         app:rowCount="8"
+        android:layout_margin="9dp"
         >
-        <!--- Kolom 0-->
+
+        <!-- *********************** Baris 8 ****************************************-->
+        <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan8a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -39,8 +42,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan8b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             app:layout_row="0"
@@ -61,8 +64,8 @@
       <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan8c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -73,6 +76,7 @@
             android:id="@+id/bidak8c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
             android:text="8C"
             app:layout_row="0"
             app:layout_column="2"
@@ -82,11 +86,11 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan8d"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
-            android:background="@drawable/latarputih"
-            android:src="@drawable/latarputih"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarkuning"
             app:layout_row="0"
             app:layout_column="3"
             />
@@ -94,6 +98,7 @@
             android:id="@+id/bidak8d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
             android:text="8C"
             app:layout_row="0"
             app:layout_column="3"
@@ -102,11 +107,11 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan8e"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
-            android:src="@drawable/latar_kuning"
+            android:src="@drawable/latarputih"
             app:layout_row="0"
             app:layout_column="4"
             />
@@ -114,6 +119,7 @@
             android:id="@+id/bidak8e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
             android:text="8C"
             app:layout_row="0"
             app:layout_column="4"
@@ -124,11 +130,11 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan8f"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
-            android:src="@drawable/latarputih"
+            android:src="@drawable/latarkuning"
             app:layout_row="0"
             app:layout_column="5"
             />
@@ -136,6 +142,7 @@
             android:id="@+id/bidak8f"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
             android:text="8C"
             app:layout_row="0"
             app:layout_column="5"
@@ -145,11 +152,11 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan8g"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
-            android:src="@drawable/latar_kuning"
+            android:src="@drawable/latarputih"
             app:layout_row="0"
             app:layout_column="6"
             />
@@ -157,6 +164,7 @@
             android:id="@+id/bidak8g"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
             android:text="8g"
             app:layout_row="0"
             app:layout_column="6"
@@ -167,11 +175,11 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan8h"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
-            android:src="@drawable/latar_kuning"
+            android:src="@drawable/latarkuning"
             app:layout_row="0"
             app:layout_column="7"
             />
@@ -179,9 +187,561 @@
             android:id="@+id/bidak8h"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
             android:text="8h"
             app:layout_row="0"
             app:layout_column="7"
             />
+        <!-- *********************** akhir Baris 8 ****************************************-->
+
+
+
+
+
+
+        <!-- *********************** Baris 7 ****************************************-->
+        <!--- Kolom 0 -->
+        <ImageView
+            android:id="@+id/papan7a"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarkuning"
+            app:layout_row="1"
+            app:layout_column="0"
+            />
+
+        <TextView
+            android:id="@+id/bidak7a"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            android:text="7A"
+            app:layout_gravity="center_vertical|center_horizontal"
+            app:layout_row="1"
+            app:layout_column="0"
+
+            />
+        <!--- Kolom 1-->
+        <ImageView
+            android:id="@+id/papan7b"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            app:layout_row="1"
+            app:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/bidak7b"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="7B"
+            app:layout_row="1"
+            app:layout_column="1"
+            />
+
+        <!--- Kolom 2-->
+        <ImageView
+            android:id="@+id/papan7c"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarkuning"
+            app:layout_row="1"
+            app:layout_column="2"
+            />
+        <TextView
+            android:id="@+id/bidak7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="7C"
+            app:layout_row="1"
+            app:layout_column="2"
+            />
+
+
+        <!--- Kolom 3-->
+        <ImageView
+            android:id="@+id/papan7d"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarputih"
+            app:layout_row="1"
+            app:layout_column="3"
+            />
+        <TextView
+            android:id="@+id/bidak7d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="7D"
+            app:layout_row="1"
+            app:layout_column="3"
+            />
+
+        <!--- Kolom 4-->
+        <ImageView
+            android:id="@+id/papan7e"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarkuning"
+            app:layout_row="1"
+            app:layout_column="4"
+            />
+        <TextView
+            android:id="@+id/bidak7e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="7E"
+            app:layout_row="1"
+            app:layout_column="4"
+            />
+
+
+
+        <!--- Kolom 5-->
+        <ImageView
+            android:id="@+id/papan7f"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarputih"
+            app:layout_row="1"
+            app:layout_column="5"
+            />
+        <TextView
+            android:id="@+id/bidak7f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="7F"
+            app:layout_row="1"
+            app:layout_column="5"
+            />
+
+
+        <!--- Kolom 6-->
+        <ImageView
+            android:id="@+id/papan7g"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarkuning"
+            app:layout_row="1"
+            app:layout_column="6"
+            />
+        <TextView
+            android:id="@+id/bidak7g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="7g"
+            app:layout_row="1"
+            app:layout_column="6"
+            />
+
+
+
+        <!--- Kolom 7-->
+        <ImageView
+            android:id="@+id/papan7h"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarputih"
+            app:layout_row="1"
+            app:layout_column="7"
+            />
+        <TextView
+            android:id="@+id/bidak7h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="7h"
+            app:layout_row="1"
+            app:layout_column="7"
+            />
+        <!-- *********************** akhir Baris 7 ****************************************-->
+
+
+        <!-- *********************** Baris 6 ****************************************-->
+        <!--- Kolom 0 -->
+        <ImageView
+            android:id="@+id/papan6a"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarputih"
+            app:layout_row="2"
+            app:layout_column="0"
+            />
+
+        <TextView
+            android:id="@+id/bidak6a"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            android:text="Contoh"
+            app:layout_gravity="center_vertical|center_horizontal"
+            app:layout_row="2"
+            app:layout_column="0"
+
+            />
+        <!--- Kolom 1-->
+        <ImageView
+            android:id="@+id/papan6b"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            app:layout_row="2"
+            app:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/bidak6b"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="Contoh"
+            app:layout_row="2"
+            app:layout_column="1"
+            />
+
+        <!--- Kolom 2-->
+        <ImageView
+            android:id="@+id/papan6c"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarputih"
+            app:layout_row="2"
+            app:layout_column="2"
+            />
+        <TextView
+            android:id="@+id/bidak6c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="6C"
+            app:layout_row="2"
+            app:layout_column="2"
+            />
+
+
+        <!--- Kolom 3-->
+        <ImageView
+            android:id="@+id/papan6d"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarkuning"
+            app:layout_row="2"
+            app:layout_column="3"
+            />
+        <TextView
+            android:id="@+id/bidak6d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="6C"
+            app:layout_row="2"
+            app:layout_column="3"
+            />
+
+        <!--- Kolom 4-->
+        <ImageView
+            android:id="@+id/papan6e"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarputih"
+            app:layout_row="2"
+            app:layout_column="4"
+            />
+        <TextView
+            android:id="@+id/bidak6e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="6C"
+            app:layout_row="2"
+            app:layout_column="4"
+            />
+
+
+
+        <!--- Kolom 5-->
+        <ImageView
+            android:id="@+id/papan6f"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarkuning"
+            app:layout_row="2"
+            app:layout_column="5"
+            />
+        <TextView
+            android:id="@+id/bidak6f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="6C"
+            app:layout_row="2"
+            app:layout_column="5"
+            />
+
+
+        <!--- Kolom 6-->
+        <ImageView
+            android:id="@+id/papan6g"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarputih"
+            app:layout_row="2"
+            app:layout_column="6"
+            />
+        <TextView
+            android:id="@+id/bidak6g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="6g"
+            app:layout_row="2"
+            app:layout_column="6"
+            />
+
+
+
+        <!--- Kolom 7-->
+        <ImageView
+            android:id="@+id/papan6h"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarkuning"
+            app:layout_row="2"
+            app:layout_column="7"
+            />
+        <TextView
+            android:id="@+id/bidak6h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="6h"
+            app:layout_row="2"
+            app:layout_column="7"
+            />
+        <!-- *********************** akhir Baris 6 ****************************************-->
+
+
+
+
+
+
+
+        <!-- *********************** Baris 7 ****************************************-->
+        <!--- Kolom 0 -->
+        <ImageView
+            android:id="@+id/papan5a"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarkuning"
+            app:layout_row="3"
+            app:layout_column="0"
+            />
+
+        <TextView
+            android:id="@+id/bidak5a"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            android:text="5A"
+            app:layout_gravity="center_vertical|center_horizontal"
+            app:layout_row="3"
+            app:layout_column="0"
+
+            />
+        <!--- Kolom 1-->
+        <ImageView
+            android:id="@+id/papan5b"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            app:layout_row="3"
+            app:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/bidak5b"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="5B"
+            app:layout_row="3"
+            app:layout_column="1"
+            />
+
+        <!--- Kolom 2-->
+        <ImageView
+            android:id="@+id/papan5c"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarkuning"
+            app:layout_row="3"
+            app:layout_column="2"
+            />
+        <TextView
+            android:id="@+id/bidak5c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="5C"
+            app:layout_row="3"
+            app:layout_column="2"
+            />
+
+
+        <!--- Kolom 3-->
+        <ImageView
+            android:id="@+id/papan5d"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarputih"
+            app:layout_row="3"
+            app:layout_column="3"
+            />
+        <TextView
+            android:id="@+id/bidak5d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="5D"
+            app:layout_row="3"
+            app:layout_column="3"
+            />
+
+        <!--- Kolom 4-->
+        <ImageView
+            android:id="@+id/papan5e"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarkuning"
+            app:layout_row="3"
+            app:layout_column="4"
+            />
+        <TextView
+            android:id="@+id/bidak5e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="5E"
+            app:layout_row="3"
+            app:layout_column="4"
+            />
+
+
+
+        <!--- Kolom 5-->
+        <ImageView
+            android:id="@+id/papan5f"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            android:src="@drawable/latarputih"
+            app:layout_row="3"
+            app:layout_column="5"
+            />
+        <TextView
+            android:id="@+id/bidak5f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="5F"
+            app:layout_row="3"
+            app:layout_column="5"
+            />
+
+
+        <!--- Kolom 6-->
+        <ImageView
+            android:id="@+id/papan5g"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarkuning"
+            app:layout_row="3"
+            app:layout_column="6"
+            />
+        <TextView
+            android:id="@+id/bidak5g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="5g"
+            app:layout_row="3"
+            app:layout_column="6"
+            />
+
+
+
+        <!--- Kolom 7-->
+        <ImageView
+            android:id="@+id/papan5h"
+            android:layout_width="@dimen/myiv_width"
+            android:layout_height="@dimen/myiv_hight"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latarputih"
+            app:layout_row="3"
+            app:layout_column="7"
+            />
+        <TextView
+            android:id="@+id/bidak5h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="5h"
+            app:layout_row="3"
+            app:layout_column="7"
+            />
+        <!-- *********************** akhir Baris 5 ****************************************-->
+
     </android.support.v7.widget.GridLayout>
 </LinearLayout>
