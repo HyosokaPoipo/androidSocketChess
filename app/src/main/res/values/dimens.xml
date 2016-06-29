@@ -10,6 +10,17 @@
     <dimen name="myiv_width">43dp</dimen>
     <dimen name="myiv_hight_land">59dp</dimen>
     <dimen name="myiv_width_land">66dp</dimen>
+
+
+    <dimen name="mytv_width_large">29dp</dimen>
+    <dimen name="mytv_hight_large">31dp</dimen>
+    <dimen name="myiv_hight_large">67dp</dimen>
+    <dimen name="myiv_width_large">73dp</dimen>
+    <dimen name="myiv_hight_large_land">67dp</dimen>
+    <dimen name="myiv_width_large_land">73dp</dimen>
+
+
+
     <dimen name="myiv_hight_small">25dp</dimen>
     <dimen name="myiv_width_small">30dp</dimen>
     <dimen name="mytv_width_small">16dp</dimen>

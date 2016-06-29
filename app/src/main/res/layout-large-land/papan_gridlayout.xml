@@ -12,21 +12,27 @@
         android:text="test"
         android:layout_gravity="center_horizontal"
         />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+
+        >
     <android.support.v7.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
         app:columnCount="8"
         app:rowCount="8"
-        android:layout_margin="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="19dp"
         >
 
         <!-- *********************** Baris 8 ****************************************-->
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan8a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -37,8 +43,8 @@
         <TextView
             android:id="@+id/bidak8a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="Contoh"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="0"
@@ -48,8 +54,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan8b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             app:layout_row="0"
@@ -59,8 +65,8 @@
         <TextView
             android:id="@+id/bidak8b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="Contoh"
             app:layout_row="0"
@@ -70,8 +76,8 @@
       <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan8c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -92,8 +98,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan8d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -113,8 +119,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan8e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -136,8 +142,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan8f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -158,8 +164,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan8g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -181,8 +187,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan8h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -209,8 +215,8 @@
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan7a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -221,8 +227,8 @@
         <TextView
             android:id="@+id/bidak7a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="7A"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="1"
@@ -232,8 +238,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan7b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             app:layout_row="1"
@@ -243,8 +249,8 @@
         <TextView
             android:id="@+id/bidak7b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="7B"
             app:layout_row="1"
@@ -254,8 +260,8 @@
         <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan7c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -276,8 +282,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan7d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -297,8 +303,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan7e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -320,8 +326,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan7f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -342,8 +348,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan7g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -365,8 +371,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan7h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -389,8 +395,8 @@
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan6a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -401,8 +407,8 @@
         <TextView
             android:id="@+id/bidak6a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="Contoh"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="2"
@@ -412,8 +418,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan6b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             app:layout_row="2"
@@ -423,8 +429,8 @@
         <TextView
             android:id="@+id/bidak6b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="Contoh"
             app:layout_row="2"
@@ -434,8 +440,8 @@
         <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan6c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -456,8 +462,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan6d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -477,8 +483,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan6e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -500,8 +506,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan6f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -522,8 +528,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan6g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -545,8 +551,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan6h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -574,8 +580,8 @@
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan5a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -586,8 +592,8 @@
         <TextView
             android:id="@+id/bidak5a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="5A"
             android:textColor="#FFFFFF"
             app:layout_gravity="center_vertical|center_horizontal"
@@ -598,8 +604,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan5b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             app:layout_row="3"
@@ -609,8 +615,8 @@
         <TextView
             android:id="@+id/bidak5b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="5B"
             app:layout_row="3"
@@ -620,8 +626,8 @@
         <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan5c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -642,8 +648,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan5d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -663,8 +669,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan5e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -686,8 +692,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan5f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -708,8 +714,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan5g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -731,8 +737,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan5h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -759,8 +765,8 @@
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan4a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -771,8 +777,8 @@
         <TextView
             android:id="@+id/bidak4a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="4A"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="4"
@@ -783,8 +789,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan4b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             app:layout_row="4"
@@ -794,8 +800,8 @@
         <TextView
             android:id="@+id/bidak4b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="4B"
             android:textColor="#FFFFFF"
@@ -806,8 +812,8 @@
         <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan4c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -829,8 +835,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan4d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -851,8 +857,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan4e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -875,8 +881,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan4f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -897,8 +903,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan4g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -921,8 +927,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan4h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -953,8 +959,8 @@
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan3a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -965,8 +971,8 @@
         <TextView
             android:id="@+id/bidak3a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="3A"
             android:textColor="#FFFFFF"
             app:layout_gravity="center_vertical|center_horizontal"
@@ -977,8 +983,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan3b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             app:layout_row="5"
@@ -988,8 +994,8 @@
         <TextView
             android:id="@+id/bidak3b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="3B"
             android:textColor="#FFFFFF"
@@ -1000,8 +1006,8 @@
         <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan3c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -1023,8 +1029,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan3d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -1045,8 +1051,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan3e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -1069,8 +1075,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan3f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -1092,8 +1098,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan3g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -1116,8 +1122,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan3h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -1144,8 +1150,8 @@
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan2a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -1156,8 +1162,8 @@
         <TextView
             android:id="@+id/bidak2a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="2A"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="6"
@@ -1168,8 +1174,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan2b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             app:layout_row="6"
@@ -1179,8 +1185,8 @@
         <TextView
             android:id="@+id/bidak2b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="2B"
             android:textColor="#FFFFFF"
@@ -1191,8 +1197,8 @@
         <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan2c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -1214,8 +1220,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan2d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -1236,8 +1242,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan2e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -1260,8 +1266,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan2f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -1282,8 +1288,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan2g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -1306,8 +1312,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan2h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -1334,8 +1340,8 @@
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan1a"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -1346,8 +1352,8 @@
         <TextView
             android:id="@+id/bidak1a"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             android:text="1A"
             android:textColor="#FFFFFF"
             app:layout_gravity="center_vertical|center_horizontal"
@@ -1358,8 +1364,8 @@
         <!--- Kolom 1-->
         <ImageView
             android:id="@+id/papan1b"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             app:layout_row="7"
@@ -1369,8 +1375,8 @@
         <TextView
             android:id="@+id/bidak1b"
             android:background="@drawable/black_rook"
-            android:layout_width="@dimen/mytv_width_large"
-            android:layout_height="@dimen/mytv_hight_large"
+            android:layout_width="@dimen/mytv_width_land"
+            android:layout_height="@dimen/mytv_hight_land"
             app:layout_gravity="center_vertical|center_horizontal"
             android:text="1B"
             android:textColor="#FFFFFF"
@@ -1381,8 +1387,8 @@
         <!--- Kolom 2-->
         <ImageView
             android:id="@+id/papan1c"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarkuning"
@@ -1404,8 +1410,8 @@
         <!--- Kolom 3-->
         <ImageView
             android:id="@+id/papan1d"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -1426,8 +1432,8 @@
         <!--- Kolom 4-->
         <ImageView
             android:id="@+id/papan1e"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -1450,8 +1456,8 @@
         <!--- Kolom 5-->
         <ImageView
             android:id="@+id/papan1f"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarputih"
             android:src="@drawable/latarputih"
@@ -1473,8 +1479,8 @@
         <!--- Kolom 6-->
         <ImageView
             android:id="@+id/papan1g"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarkuning"
@@ -1497,8 +1503,8 @@
         <!--- Kolom 7-->
         <ImageView
             android:id="@+id/papan1h"
-            android:layout_width="@dimen/myiv_width_large"
-            android:layout_height="@dimen/myiv_hight_large"
+            android:layout_width="@dimen/myiv_width_land"
+            android:layout_height="@dimen/myiv_hight_land"
             android:scaleType="fitXY"
             android:background="@drawable/latarkuning"
             android:src="@drawable/latarputih"
@@ -1518,4 +1524,5 @@
         <!-- *********************** akhir Baris 1 ****************************************-->
 
     </android.support.v7.widget.GridLayout>
+    </ScrollView>
 </LinearLayout>
