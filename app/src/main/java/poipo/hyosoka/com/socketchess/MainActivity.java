@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.papan_gridlayout);
 
-        getServerData test = new getServerData("xinuc.org",7387);
-        test.execute();
+        //getServerData test = new getServerData("xinuc.org",7387);
+        //test.execute();
 
     }
 

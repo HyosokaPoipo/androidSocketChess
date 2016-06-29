@@ -1,11 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.GridLayout android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        app:columnCount="8"
+        app:rowCount="8"
+        >
+        <!--- Kolom 0-->
+        <ImageView
+            android:id="@+id/papan8a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/white_queen"
+            app:layout_row="0"
+            app:layout_column="0"
+            android:src="@drawable/latar_kuning"
+            />
 
+        <TextView
+            android:id="@+id/bidak8a"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            android:text="Contoh"
+            app:layout_gravity="center_vertical|center_horizontal"
+            app:layout_row="0"
+            app:layout_column="0"
+
+            />
+        <!--- Kolom 1-->
+        <ImageView
+            android:id="@+id/papan8b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarputih"
+            app:layout_row="0"
+            app:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/bidak8b"
+            android:background="@drawable/black_rook"
+            android:layout_width="@dimen/mytv_width"
+            android:layout_height="@dimen/mytv_hight"
+            app:layout_gravity="center_vertical|center_horizontal"
+            android:text="Contoh"
+            app:layout_row="0"
+            app:layout_column="1"
+            />
+
+      <!--- Kolom 2-->
+        <ImageView
+            android:id="@+id/papan8c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/latarkuning"
+            android:src="@drawable/latar_kuning"
+            app:layout_row="0"
+            app:layout_column="2"
+            />
+        <TextView
+            android:id="@+id/bidak8c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8C"
+            app:layout_row="0"
+            app:layout_column="2"
+        />
     </android.support.v7.widget.GridLayout>
 </LinearLayout>
