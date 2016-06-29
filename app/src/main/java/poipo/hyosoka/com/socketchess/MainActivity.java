@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -13,21 +14,25 @@ import java.net.UnknownHostException;
 
 public class MainActivity extends AppCompatActivity {
 
+    getServerData threadProcess;
+    TextView myTest ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.papan_gridlayout);
-
-        //getServerData test = new getServerData("xinuc.org",7387);
-        //test.execute();
+        myTest = (TextView) findViewById(R.id.testajjah);
+        threadProcess = new getServerData("xinuc.org",7387);
+        threadProcess.execute();
 
     }
 
 
+    @Override
+    protected void onResume() {
+        super.onResume();
 
-
-
-
+    }
 
     public class getServerData extends AsyncTask<Void,Void,Void>
     {
@@ -59,15 +64,20 @@ public class MainActivity extends AppCompatActivity {
                 //inputStream.read() akan terblock bila tidak ada respond data
                 while((bytesRead = inputStream.read(buffer)) != -1)
                 {
-                    //if(bytesRead < 0)
-                    //{//Toast.makeText(getApplicationContext(), "null respon from server", Toast.LENGTH_SHORT).show();
-                    //break;}
+                    if(bytesRead < 0)
+                    {
+                        //Toast.makeText(getApplicationContext(), "null respon from server", Toast.LENGTH_SHORT).show();
+                      break;}
+
                     Log.i("while", "di dalam while");
                     Log.i("bytesRead ", Integer.toString(bytesRead));
                     byteArrayOutputStream.write(buffer, 0, bytesRead);
                     response += byteArrayOutputStream.toString();
                     Log.i("response ", response);
+                    break;
                 }
+
+
                 Log.i("while", "di luar while");
 
             } catch (UnknownHostException e) {
@@ -82,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     try {
                         socket.close();
+                        Log.i("doInBackground", "Closing socket....");
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
                         //Log.i("doInBackground", "IOException for socket.close() "+e.toString());
@@ -102,8 +113,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result) {
             // TODO Auto-generated method stub
-            Log.i("onPostExecute ", response);
+            Log.i("onPostExecute**** ", response);
             //textResponse.setText(response);
+            myTest.setText(response);
+            getServerData test= new getServerData("xinuc.org",7387);
+            test.execute();
             super.onPostExecute(result);
         }
 
