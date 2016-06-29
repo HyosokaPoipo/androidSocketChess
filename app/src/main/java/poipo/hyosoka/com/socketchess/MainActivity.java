@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setID();
         myTest = (TextView) findViewById(R.id.testajjah);
         threadProcess = new getServerData("xinuc.org",7387);
-        //threadProcess.execute();
+        threadProcess.execute();
 
 
         //bidakTV = (TextView)findViewById(R.id.bidak1c);
