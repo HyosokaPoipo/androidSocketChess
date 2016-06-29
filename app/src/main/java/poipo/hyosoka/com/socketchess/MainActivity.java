@@ -32,15 +32,15 @@ public class MainActivity extends AppCompatActivity {
         setID();
         myTest = (TextView) findViewById(R.id.testajjah);
         threadProcess = new getServerData("xinuc.org",7387);
-        //threadProcess.execute();
+        threadProcess.execute();
 
 
         //bidakTV = (TextView)findViewById(R.id.bidak1c);
-        String data = "Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3 Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3";
-        setBidak(data);
-        myTest.setText(data);
-        resetBidak();
-    
+        //String data = "Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3 Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3";
+        //setBidak(data);
+        //myTest.setText(data);
+        //resetBidak();
+
 
 
 
@@ -133,8 +133,15 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Void result) {
             // TODO Auto-generated method stub
             Log.i("onPostExecute**** ", response);
-            //textResponse.setText(response);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            resetBidak();
             myTest.setText(response);
+            setBidak(response);
+
             getServerData test= new getServerData("xinuc.org",7387);
             test.execute();
             super.onPostExecute(result);
@@ -150,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setBidak(String key)
     {
-        String[] data = key.split(" ");
+        String[] data = key.trim().split(" ");
         for(int i=0; i<data.length; i++)
         {
             bidakTV = null;
