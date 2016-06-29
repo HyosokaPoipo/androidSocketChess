@@ -4,8 +4,12 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="mytv_width">21dp</dimen>
     <dimen name="mytv_hight">21dp</dimen>
+    <dimen name="mytv_width_land">27dp</dimen>
+    <dimen name="mytv_hight_land">25dp</dimen>
     <dimen name="myiv_hight">37dp</dimen>
     <dimen name="myiv_width">43dp</dimen>
+    <dimen name="myiv_hight_land">59dp</dimen>
+    <dimen name="myiv_width_land">66dp</dimen>
     <dimen name="myiv_hight_small">25dp</dimen>
     <dimen name="myiv_width_small">30dp</dimen>
     <dimen name="mytv_width_small">16dp</dimen>
