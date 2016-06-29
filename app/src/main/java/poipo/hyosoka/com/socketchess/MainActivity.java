@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getServerData test = new getServerData("xinuc.org",7387);
+        test.execute();
+
     }
 
 
@@ -110,5 +114,5 @@ public class MainActivity extends AppCompatActivity {
     }//end of getServerData
 
 
-    
+
 }
