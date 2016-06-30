@@ -9,7 +9,7 @@
         android:id="@+id/testajjah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
+        android:text="Checking internet connection..."
         android:layout_gravity="center_horizontal"
         />
     <android.support.v7.widget.GridLayout
