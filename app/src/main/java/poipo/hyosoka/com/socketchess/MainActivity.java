@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Map<String, Integer> mapID = new HashMap<String,Integer>();
     getServerData threadProcess;
     TextView myTest ;
-
+    boolean status, isRunning = false;
     TextView bidakTV;
 
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.papan_gridlayout);
         setID();
         myTest = (TextView) findViewById(R.id.testajjah);
+        status = true;
         threadProcess = new getServerData("xinuc.org",7387);
         threadProcess.execute();
 
@@ -46,6 +49,40 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_start) {
+            if(isRunning)
+            {
+                Toast.makeText(getApplicationContext(),"Socket is already running",Toast.LENGTH_SHORT).show();
+            }else {
+                getServerData th = new getServerData("xinuc.org",7387);
+                th.execute();
+                isRunning = true;
+            }
+            return true;
+        }else if(id == R.id.action_stop)
+        {
+            isRunning = false;
+            status = false;
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onResume() {
@@ -142,8 +179,11 @@ public class MainActivity extends AppCompatActivity {
             myTest.setText(response);
             setBidak(response);
 
-            getServerData test= new getServerData("xinuc.org",7387);
-            test.execute();
+            if(status) {
+                getServerData test = new getServerData("xinuc.org", 7387);
+                test.execute();
+                isRunning = true;
+            }
             super.onPostExecute(result);
         }
 

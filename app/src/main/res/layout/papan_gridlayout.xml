@@ -36,10 +36,8 @@
 
         <TextView
             android:id="@+id/bidak8a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="Contoh"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="0"
             app:layout_column="0"
@@ -58,11 +56,9 @@
 
         <TextView
             android:id="@+id/bidak8b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="Contoh"
             app:layout_row="0"
             app:layout_column="1"
             />
@@ -83,7 +79,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="8C"
             app:layout_row="0"
             app:layout_column="2"
         />
@@ -105,7 +100,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="8C"
             app:layout_row="0"
             app:layout_column="3"
             />
@@ -126,7 +120,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="8C"
             app:layout_row="0"
             app:layout_column="4"
             />
@@ -149,7 +142,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="8C"
             app:layout_row="0"
             app:layout_column="5"
             />
@@ -171,7 +163,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="8g"
             app:layout_row="0"
             app:layout_column="6"
             />
@@ -194,7 +185,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="8h"
             app:layout_row="0"
             app:layout_column="7"
             />
@@ -220,10 +210,8 @@
 
         <TextView
             android:id="@+id/bidak7a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="7A"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="1"
             app:layout_column="0"
@@ -242,11 +230,9 @@
 
         <TextView
             android:id="@+id/bidak7b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="7B"
             app:layout_row="1"
             app:layout_column="1"
             />
@@ -267,7 +253,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="7C"
             app:layout_row="1"
             app:layout_column="2"
             />
@@ -289,7 +274,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="7D"
             app:layout_row="1"
             app:layout_column="3"
             />
@@ -310,7 +294,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="7E"
             app:layout_row="1"
             app:layout_column="4"
             />
@@ -333,7 +316,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="7F"
             app:layout_row="1"
             app:layout_column="5"
             />
@@ -355,7 +337,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="7g"
             app:layout_row="1"
             app:layout_column="6"
             />
@@ -378,7 +359,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="7h"
             app:layout_row="1"
             app:layout_column="7"
             />
@@ -400,10 +380,8 @@
 
         <TextView
             android:id="@+id/bidak6a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="Contoh"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="2"
             app:layout_column="0"
@@ -422,11 +400,9 @@
 
         <TextView
             android:id="@+id/bidak6b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="Contoh"
             app:layout_row="2"
             app:layout_column="1"
             />
@@ -447,7 +423,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="6C"
             app:layout_row="2"
             app:layout_column="2"
             />
@@ -469,7 +444,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="6C"
             app:layout_row="2"
             app:layout_column="3"
             />
@@ -490,7 +464,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="6C"
             app:layout_row="2"
             app:layout_column="4"
             />
@@ -513,7 +486,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="6C"
             app:layout_row="2"
             app:layout_column="5"
             />
@@ -535,7 +507,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="6g"
             app:layout_row="2"
             app:layout_column="6"
             />
@@ -558,7 +529,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="6h"
             app:layout_row="2"
             app:layout_column="7"
             />
@@ -570,7 +540,7 @@
 
 
 
-        <!-- *********************** Baris 7 ****************************************-->
+        <!-- *********************** Baris 5 ****************************************-->
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan5a"
@@ -585,11 +555,8 @@
 
         <TextView
             android:id="@+id/bidak5a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="5A"
-            android:textColor="#FFFFFF"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="3"
             app:layout_column="0"
@@ -608,11 +575,9 @@
 
         <TextView
             android:id="@+id/bidak5b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="5B"
             app:layout_row="3"
             app:layout_column="1"
             />
@@ -633,7 +598,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="5C"
             app:layout_row="3"
             app:layout_column="2"
             />
@@ -655,7 +619,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="5D"
             app:layout_row="3"
             app:layout_column="3"
             />
@@ -676,7 +639,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="5E"
             app:layout_row="3"
             app:layout_column="4"
             />
@@ -699,7 +661,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="5F"
             app:layout_row="3"
             app:layout_column="5"
             />
@@ -721,7 +682,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="5g"
             app:layout_row="3"
             app:layout_column="6"
             />
@@ -744,7 +704,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="5h"
             app:layout_row="3"
             app:layout_column="7"
             />
@@ -770,15 +729,11 @@
 
         <TextView
             android:id="@+id/bidak4a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="4A"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="4"
-            android:textColor="#FFFFFF"
             app:layout_column="0"
-
             />
         <!--- Kolom 1-->
         <ImageView
@@ -793,12 +748,9 @@
 
         <TextView
             android:id="@+id/bidak4b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="4B"
-            android:textColor="#FFFFFF"
             app:layout_row="4"
             app:layout_column="1"
             />
@@ -819,8 +771,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="4C"
-            android:textColor="#FFFFFF"
             app:layout_row="4"
             app:layout_column="2"
             />
@@ -842,8 +792,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="4D"
-            android:textColor="#FFFFFF"
             app:layout_row="4"
             app:layout_column="3"
             />
@@ -864,8 +812,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="4E"
-            android:textColor="#FFFFFF"
             app:layout_row="4"
             app:layout_column="4"
             />
@@ -888,7 +834,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="4F"
             app:layout_row="4"
             app:layout_column="5"
             />
@@ -910,8 +855,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="4g"
-            android:textColor="#FF0000"
             app:layout_row="4"
             app:layout_column="6"
             />
@@ -934,8 +877,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="4h"
-            android:textColor="#FFFFFF"
             app:layout_row="4"
             app:layout_column="7"
             />
@@ -949,7 +890,7 @@
 
 
 
-        <!-- *********************** Baris 7 ****************************************-->
+        <!-- *********************** Baris 3 ****************************************-->
         <!--- Kolom 0 -->
         <ImageView
             android:id="@+id/papan3a"
@@ -964,11 +905,8 @@
 
         <TextView
             android:id="@+id/bidak3a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="3A"
-            android:textColor="#FFFFFF"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="5"
             app:layout_column="0"
@@ -987,12 +925,9 @@
 
         <TextView
             android:id="@+id/bidak3b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="3B"
-            android:textColor="#FFFFFF"
             app:layout_row="5"
             app:layout_column="1"
             />
@@ -1013,8 +948,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="3C"
-            android:textColor="#FFFFFF"
             app:layout_row="5"
             app:layout_column="2"
             />
@@ -1036,8 +969,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="3D"
-            android:textColor="#FFFFFF"
             app:layout_row="5"
             app:layout_column="3"
             />
@@ -1058,8 +989,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="3E"
-            android:textColor="#FFFFFF"
             app:layout_row="5"
             app:layout_column="4"
             />
@@ -1082,8 +1011,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="3F"
-            android:textColor="#FFFFFF"
             app:layout_row="5"
             app:layout_column="5"
             />
@@ -1105,8 +1032,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="3g"
-            android:textColor="#FFFFFF"
             app:layout_row="5"
             app:layout_column="6"
             />
@@ -1129,8 +1054,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="3h"
-            android:textColor="#FFFFFF"
             app:layout_row="5"
             app:layout_column="7"
             />
@@ -1155,13 +1078,10 @@
 
         <TextView
             android:id="@+id/bidak2a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="2A"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="6"
-            android:textColor="#FFFFFF"
             app:layout_column="0"
 
             />
@@ -1178,12 +1098,9 @@
 
         <TextView
             android:id="@+id/bidak2b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="2B"
-            android:textColor="#FFFFFF"
             app:layout_row="6"
             app:layout_column="1"
             />
@@ -1204,8 +1121,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="2C"
-            android:textColor="#FFFFFF"
             app:layout_row="6"
             app:layout_column="2"
             />
@@ -1227,8 +1142,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="2D"
-            android:textColor="#FFFFFF"
             app:layout_row="6"
             app:layout_column="3"
             />
@@ -1249,8 +1162,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="2E"
-            android:textColor="#FFFFFF"
             app:layout_row="6"
             app:layout_column="4"
             />
@@ -1273,7 +1184,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="2F"
             app:layout_row="6"
             app:layout_column="5"
             />
@@ -1295,8 +1205,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="2g"
-            android:textColor="#FF0000"
             app:layout_row="6"
             app:layout_column="6"
             />
@@ -1319,8 +1227,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="2h"
-            android:textColor="#FFFFFF"
             app:layout_row="6"
             app:layout_column="7"
             />
@@ -1345,11 +1251,8 @@
 
         <TextView
             android:id="@+id/bidak1a"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
-            android:text="1A"
-            android:textColor="#FFFFFF"
             app:layout_gravity="center_vertical|center_horizontal"
             app:layout_row="7"
             app:layout_column="0"
@@ -1368,12 +1271,9 @@
 
         <TextView
             android:id="@+id/bidak1b"
-            android:background="@drawable/black_rook"
             android:layout_width="@dimen/mytv_width"
             android:layout_height="@dimen/mytv_hight"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="1B"
-            android:textColor="#FFFFFF"
             app:layout_row="7"
             app:layout_column="1"
             />
@@ -1394,8 +1294,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="1C"
-            android:textColor="#FFFFFF"
             app:layout_row="7"
             app:layout_column="2"
             />
@@ -1417,8 +1315,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="1D"
-            android:textColor="#FFFFFF"
             app:layout_row="7"
             app:layout_column="3"
             />
@@ -1439,8 +1335,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="1E"
-            android:textColor="#FFFFFF"
             app:layout_row="7"
             app:layout_column="4"
             />
@@ -1463,8 +1357,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="1F"
-            android:textColor="#FFFFFF"
             app:layout_row="7"
             app:layout_column="5"
             />
@@ -1486,8 +1378,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="1g"
-            android:textColor="#FFFFFF"
             app:layout_row="7"
             app:layout_column="6"
             />
@@ -1510,8 +1400,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_gravity="center_vertical|center_horizontal"
-            android:text="1h"
-            android:textColor="#FFFFFF"
             app:layout_row="7"
             app:layout_column="7"
             />
