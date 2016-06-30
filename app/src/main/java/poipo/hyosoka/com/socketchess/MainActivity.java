@@ -1,6 +1,9 @@
 package poipo.hyosoka.com.socketchess;
 
+import android.content.Context;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +16,9 @@ import android.widget.Toast;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.Socket;
+import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
     Map<String, Integer> mapID = new HashMap<String,Integer>();
     getServerData threadProcess;
     TextView myTest ;
-    boolean status, isRunning = false;
+    boolean status = false, isRunning = false;
     TextView bidakTV;
-
+    checkInternetStatus check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +38,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.papan_gridlayout);
         setID();
         myTest = (TextView) findViewById(R.id.testajjah);
-        status = true;
-        threadProcess = new getServerData("xinuc.org",7387);
-        threadProcess.execute();
-
-
-        //bidakTV = (TextView)findViewById(R.id.bidak1c);
-        //String data = "Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3 Kc1 Qc3 Bh5 Nf8 Ra4 kd1 qb8 bb4 nb1 rd3";
-        //setBidak(data);
-        //myTest.setText(data);
-        //resetBidak();
-
-
-
-
+        check = new checkInternetStatus();
+        check.execute();
     }
 
     @Override
@@ -72,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 getServerData th = new getServerData("xinuc.org",7387);
                 th.execute();
                 isRunning = true;
+                status = true;
             }
             return true;
         }else if(id == R.id.action_stop)
@@ -155,6 +149,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
+
+
             return null;
         }//end of doInBackground
 
@@ -180,9 +176,14 @@ public class MainActivity extends AppCompatActivity {
             setBidak(response);
 
             if(status) {
-                getServerData test = new getServerData("xinuc.org", 7387);
-                test.execute();
-                isRunning = true;
+                    getServerData test = new getServerData("xinuc.org", 7387);
+                    test.execute();
+                    isRunning = true;
+            }else
+            {
+                status = false;
+                isRunning = false;
+                Toast.makeText(getApplicationContext(),"Thread stopped", Toast.LENGTH_SHORT).show();
             }
             super.onPostExecute(result);
         }
@@ -330,6 +331,86 @@ public class MainActivity extends AppCompatActivity {
         {
             bidakTV = (TextView)findViewById(entry.getValue());
             bidakTV.setBackgroundColor(Color.TRANSPARENT);
+        }
+
+    }
+
+    public boolean isInternetWorking() {
+        boolean success = false;
+        try {
+            URL url = new URL("https://google.com");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setConnectTimeout(900);
+            connection.connect();
+            success = connection.getResponseCode() == 200;
+        } catch (java.net.SocketTimeoutException e) {
+            return false;
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+        return success;
+    }
+
+
+    private  boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
+
+    private boolean hasActiveInternetConnection(Context context) {
+        if (isNetworkAvailable()) {
+            try {
+                HttpURLConnection urlc = (HttpURLConnection) (new URL("http://www.google.com").openConnection());
+                urlc.setRequestProperty("User-Agent", "Test");
+                urlc.setRequestProperty("Connection", "close");
+                urlc.setConnectTimeout(1500);
+                urlc.connect();
+                return (urlc.getResponseCode() == 200);
+            } catch (IOException e) {
+                Log.e("", "Error checking internet connection", e);
+            }
+        } else {
+            Log.d("", "No network available!");
+        }
+        return false;
+    }
+
+    private class checkInternetStatus extends  AsyncTask<Void,Void,Void>
+    {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            if(isInternetWorking())
+            {
+                status = true;
+                Log.i("StatusCheckInternetCo","Status True");
+            }
+            Log.i("StatusCheckInternetCo","Status False");
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            // TODO Auto-generated method stub
+            super.onPreExecute();
+        }
+
+
+        @Override
+        protected void onPostExecute(Void result) {
+            if(status)
+            {
+                threadProcess = new getServerData("xinuc.org", 7387);
+                threadProcess.execute();
+                isRunning = true;
+            }else
+            {
+                myTest.setText("Please connect your smartphone to internet...");
+                Toast.makeText(getApplicationContext(), "No network connection", Toast.LENGTH_SHORT).show();
+            }
         }
 
     }
